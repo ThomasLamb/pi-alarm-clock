@@ -8,7 +8,8 @@ def hello():
     now = datetime.datetime.now()
     timeString = now.strftime("%Y-%m-%d %H:%M")
     templateData = {
-        'title': 'HELLO!',
+		'application': 'Pi Alarm Clock',
+        'title': 'Main',
         'time': timeString
     }
     return render_template('main.html', **templateData)
